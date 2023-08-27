@@ -9,8 +9,8 @@ BtnSubmit.addEventListener("click", (e) => {
   const Asunto = document.getElementById('asunto').value;
   const Message = Textarea.value;
   console.log({ Nombre }, { Email }, { Asunto }, { Message })
-  // fetch('http://localhost:3000/api/contact'
-  fetch('http://192.168.80.10:3000/api/contact', {
+
+  fetch('http://localhost:3000/api/contact', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
